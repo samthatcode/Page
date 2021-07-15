@@ -1,0 +1,361 @@
+body {
+   box-sizing: border-box;
+   font-family:  Verdana, Geneva, Tahoma, sans-serif;
+   line-height: 1.45;
+   padding: 0;
+   margin: 0;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #444;
+    color: white;
+    position:fixed;
+    width: 100%;
+}
+
+.brand-title {
+    font-size: 1.5rem;
+    margin: .5rem;
+    margin-left: 50px;
+}
+.brand-title .name{
+    color: orange;
+}
+
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    list-style: none;
+
+}
+.navbar-links li a {
+    text-decoration: none;
+    color: #c3c3c3;
+    padding: 1rem;
+    display: block;
+}
+
+li a:hover {
+    color: #ffffff;
+}
+
+/*.navbar-links li:hover {
+    background-color: #555;
+    
+} */
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 31px;
+    height: 21px;
+    
+
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+
+header {
+    background-color: #284b63;
+    color: #ffffff;
+    padding: 80px 0 80px 0;
+    text-align: center;
+}
+
+
+.container h1 {
+    font-size: 48px;
+    margin: 0 0 16px 0;
+    font-family:'Courier New', Courier, monospace;
+}
+
+h2 {
+    font-weight: 300;
+    font-size: 24px;
+    margin: 0 0 16px 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+div a {
+    text-decoration: none;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 20px 0 20px;
+    max-width: 900px;
+}
+
+.container-footer a {
+    margin-right: 20px;
+    color: #c3c3c3;
+}
+
+/* .container-footer a:hover {
+    text-decoration: underline;
+} */
+.btn {
+    display: inline-block;
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    background-color: #549da0;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 16px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #468486;
+}
+
+section {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.features {
+    background-color: #f1e0e0;
+    color: #000000;
+}
+
+.feature {
+    width: 24%;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.feature img {
+    width: 70%;
+    object-fit: cover;
+}
+
+.feature img:hover{
+    cursor: pointer;
+    box-shadow: rgba(0,0,0,0.2);
+}
+
+.quote {
+    background-color: #549DA0;
+    color: #000000;
+}
+
+blockquote {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+blockquote p {
+    margin: 0 0 5px 0;
+    font-size: 24px;
+}
+
+blockquote cite {
+    font-size: 16px;
+    font-style: italic;
+}
+
+blockquote cite::before {
+    content: '-';
+    margin-right: 5px;
+}
+
+footer {
+    background-color: #353535;
+    padding: 32px 0;
+    text-align: center;
+    color: #868686;
+    font-size: 12px;
+}
+
+footer  {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+footer li {
+   display: inline-block;
+} 
+
+footer  a {
+    padding: 6px;
+    font-size: 35px;
+    text-decoration: none;
+    color: #c3c3c3;
+}
+
+footer  a:hover {
+    color: white;
+}
+
+.submenu {
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+    position: absolute;
+    background-color: #549DA0;
+    min-width: 160px;
+    border-radius: 5px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    display: none;
+}
+
+.submenu a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.submenu a:hover {
+    background-color: #468486;
+} 
+
+@media screen and (max-width: 768px) {
+    .btn {
+        display: block;
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 32px;
+        margin: 0 0 8px 0;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    section {
+        padding: 25px 0 15px 0;
+    }
+
+    .feature {
+        width: 100%;
+        text-align: left;
+        margin: 0 0 10px 0;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /*display: grid;
+        place-items: center; */
+    }
+
+    .feature img {
+        width: 15%;
+        min-width: 60px;
+        margin-right: 20px;
+    }
+
+    .quote {
+        padding: 30px 0;
+    }
+
+    blockquote p {
+        font-size: 18px;
+    }
+
+    blockquote cite {
+        font-size: 14px;
+    }
+
+    footer {
+        padding: 30px 0 10px 0 ;
+    }
+
+    footer li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .submenu {
+        width: 100%;
+        position: relative;
+    }
+}
+
+@media (max-width: 600px ) {
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links li {
+        text-align: center;
+    }
+
+    .navbar-links li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+    .container h2 {
+    text-align: justify;
+}
+    .container h2 {
+    text-align: justify;
+    }
+    
+    .feature img{
+        width: 100%;
+    }
+    /* .feature > p{
+        width: 100%;
+        display: block;
+    } */
+
+}
+
+
+
+
+
+
+
+
+
+/* 
+    Media Queries for all/different scrren sizes
+    320px - 480px: For mobile devices
+    481px - 768px : For ipads, Tablets
+    769px - 1024px: For small screen such as Laptops
+    1025px - 1200px; Desktops, Larger screen e.t.c
+*/
